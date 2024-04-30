@@ -29,10 +29,10 @@ query_processor:
   # The actual condition for the queried data to obey. Arbitrary change.
   # In this example we do a 1km box around two coordinates
   condition: >- # The ">-" allows you to use linebreaks for clarity
-    (x_center < -9593500 + 1000) &
-    (x_center > -9593500 - 1000) &
-    (y_center < 4857700 + 1000) &
-    (y_center > 4857700 - 1000)
+    (x_center < -9593500 + 2000) &
+    (x_center > -9593500 - 2000) &
+    (y_center < 4857700 + 2000) &
+    (y_center > 4857700 - 2000)
 
 # What metadata processor to use (based on metadata format)
 metadata_processor:
