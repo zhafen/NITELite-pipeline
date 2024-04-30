@@ -26,7 +26,7 @@ io_manager:
   file_exists: overwrite
 
 query_processor:
-  # The actual condition for the queried data to obey.
+  # The actual condition for the queried data to obey. Arbitrary change.
   # In this example we do a 1km box around two coordinates
   condition: >- # The ">-" allows you to use linebreaks for clarity
     (x_center < -9593500 + 1000) &
