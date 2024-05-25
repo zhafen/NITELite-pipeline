@@ -5,8 +5,8 @@ services:
   nitelite-pipeline:
     image: nitelite-pipeline:latest
     volumes:
-      - /Users/Shared/data/nitelite/220513-FH135/images/referenced:/data/input/referenced_images
-      - /Users/Shared/data/nitelite/220513-FH135/metadata:/data/input/metadata
-      - /Users/Shared/data/nitelite/220513-FH135/images/raw:/data/input/images
-      - /Users/Shared/data/nitelite/pipeline-output:/data/input/existing_output
+      - /Users/Shared/data/nitelite/220513-FH135/nitelite.images/referenced:/data/input/nitelite.referenced-images
+      - /Users/Shared/data/nitelite/220513-FH135/metadata:/data/input/nitelite.metadata
+      - /Users/Shared/data/nitelite/220513-FH135/nitelite.images/raw:/data/input/nitelite.images
+      - /Users/Shared/data/nitelite/pipeline-output:/data/input/nitelite.pipeline-output
       - /Users/Shared/data/nitelite/pipeline-output:/data/output

@@ -79,7 +79,7 @@ ls $DATA_DIR
 echo
 
 echo 'Can we see individual input files?'
-ls $DATA_DIR/input/referenced_images/220513-FH135/
+ls $DATA_DIR/input/nitelite.referenced-images/220513-FH135/
 echo
 
 echo 'Where are we inside the docker container?'
@@ -100,7 +100,7 @@ docker compose -f $COMPOSE_FILE \
     --volume $DATA_DIR:/data \
     nitelite-pipeline \
     /bin/bash -c \
-    'ls /data/input/referenced_images/220513-FH135/'
+    'ls /data/input/nitelite.referenced-images/220513-FH135/'
 echo
 
 echo 'Can we create, see, and delete files inside the output directory?'

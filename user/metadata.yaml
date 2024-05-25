@@ -13,13 +13,13 @@ io_manager:
   input_dir: /data/input
   input_description:
     # Metadata files. This is the path relative to the input_dir.
-    img_log: metadata/image.log
-    imu_log: metadata/PresIMULog.csv
-    gps_log: metadata/GPSLog.csv
+    img_log: nitelite.metadata/image.log
+    imu_log: nitelite.metadata/PresIMULog.csv
+    gps_log: nitelite.metadata/GPSLog.csv
     # Images without georeferencing. Needed for the metadata processor.
     images:
       # Relative to input_dir
-      directory: images
+      directory: nitelite.images
       # Only files with these extensions will be considered.
       pattern: '\.(raw|tif|tiff)$'
   # Where the output files will be saved
